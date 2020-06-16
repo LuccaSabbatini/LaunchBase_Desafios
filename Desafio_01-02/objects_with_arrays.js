@@ -1,6 +1,6 @@
 // Factories:
 function createProgrammer(name, age, items) {
-    techs = [];
+    let techs = [];
     
     for (item in items) {
         techs.push(items[item]);
@@ -26,8 +26,8 @@ const Python = createTechnlogy('Python', 'Data Science');
 const JavaScript = createTechnlogy('JavaScript', 'Web/Mobile');
 
 // Create programmer:
-let programmerTechs = [Cpp, Python, JavaScript];
-let programmer = createProgrammer('Lucca', 20, programmerTechs)
+const programmerTechs = [Cpp, Python, JavaScript];
+const programmer = createProgrammer('Lucca', 20, programmerTechs)
 
 // Show results in console.
 console.log(`${programmer.name} é Developer e tem atualmente ${programmer.age} anos.\n${programmer.name} trabalha com:`);
