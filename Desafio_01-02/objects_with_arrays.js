@@ -1,11 +1,11 @@
 // Factories:
 function createProgrammer(name, age, items) {
     let techs = [];
-    
+
     for (item in items) {
         techs.push(items[item]);
     }
-    
+
     return {
         name: name,
         age: age,

@@ -8,7 +8,7 @@ function createUser(userName, companyName, color, focus, address) { // Returns a
             address: address
         };
     }
-    
+
     return {
         name: userName,
         company: createCompany(companyName, color, focus, address)
