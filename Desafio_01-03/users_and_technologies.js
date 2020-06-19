@@ -1,14 +1,4 @@
 // Factories:
-function defineTechs() { // Define the technologies that are going to be used by users.
-    let techs = [];
-
-    for (argument in arguments) {
-        techs.push(arguments[argument]);
-    }
-
-    return techs;
-}
-
 function createUser() { // Creates an user.
     let techs = [];
 
@@ -33,7 +23,7 @@ function createUsersArray() { // Puts the users in the arguments inside an array
 }
 
 // Variables:
-const techs = defineTechs('HTML', 'CSS', 'JavaScript', 'Node.js'); // Creates the array of technologies.
+const techs = ['HTML', 'CSS', 'JavaScript', 'Node.js']; // Creates the array of technologies.
 const user1 = createUser('Carlos', techs[0], techs[1]); // Creates a new user.
 const user2 = createUser('Jasmine', techs[0], techs[1], techs[2]); // Creates a new user.
 const user3 = createUser('Tuane', techs[3]); // Creates a new user.
