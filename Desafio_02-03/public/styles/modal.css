@@ -1,0 +1,67 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+/* === MODAL === */
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+    background: white;
+    padding: 30px;
+    border-radius: 0px;
+}
+
+.close-modal {
+    position: absolute;
+    margin: 5px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.fullscreen-modal {
+    position: absolute;
+    margin: 5px;
+    top: 0px;
+    right: 25px;
+    cursor: pointer;
+}
+
+iframe {
+    width: calc(100vw - 60px);
+    height: calc(100vh - 60px);
+}
+
+/* === MODAL ACTIVE === */
+body.hidden-overflow {
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* === MODAL FULLSCREEN === */
+.modal.mini {
+    max-width: 570px;
+    position: relative;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+iframe.mini {
+    max-width: 570px;
+    width: calc(100vw - 120px);
+    height: calc(100vh - 120px);
+}
